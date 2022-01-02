@@ -10,13 +10,18 @@ function addFkt(x,y){
 }
 let addValue=addFkt(2,5);
 document.getElementById("add").innerHTML=addValue;
-
+/*
+let addValue = (x,y) =>x+y
+ */
 
 function multiplyFkt(x,y){
     return x*y;
 }
 let multiplyValue=multiplyFkt(2,5);
 document.getElementById("multiply").innerHTML=multiplyValue;
+/*
+let multiplyValue = (x,y) => x*y
+ */
 
 
 function factorialFkt(x){
@@ -32,6 +37,13 @@ function factorialFkt(x){
 }
 let factorialValue=factorialFkt(5);
 document.getElementById("factorial").innerHTML=factorialValue;
+
+/*
+let factorialValue = (a,b) =>{
+if(b==0) return 1
+a*(factorialValue (a,b-1)|| 1)
+}
+ */
 
 //************  Aufgabe 2 ************
 
@@ -187,4 +199,5 @@ function objectList(array) {
     return formList;
 }
 console.log(objectList(array1));
+
 
